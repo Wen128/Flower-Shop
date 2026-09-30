@@ -1,0 +1,35 @@
+
+export const Navbar = () => {
+  return (
+    <div className="w-full flex justify-center fixed z-50">
+        <div className="w-4/5 px-8 rounded-full mt-4 h-16 flex justify-between items-center bg-[#F7DCDC] shadow-md">
+            {/* Logo */}
+            <div>
+                <h1 className="text-xl text-[#FF7979] font-dynapuff">Flower<span className="text-[#913838]">Shop</span></h1>
+            </div>
+
+            {/* Navigation Links */}
+            <div className="flex space-x-16 font-el-messiri text-xl">
+                <a href="#" className="text-[#913838] hover:text-[#FF7979]">Home</a>
+                <a href="#" className="text-[#913838] hover:text-[#FF7979]">Shop</a>
+                <a href="#" className="text-[#913838] hover:text-[#FF7979]">About</a>
+                <a href="#" className="text-[#913838] hover:text-[#FF7979]">FAQs</a>
+            </div>
+
+            {/* Cart and Profile Icon */}
+            <div className="flex">
+                <a href="#" className="text-[#913838] hover:text-[#FF7979]">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                </a>
+                <a href="#" className="text-[#913838] hover:text-[#FF7979] ml-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5.121 17.804A13.937 13.937 0 0112 15c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+  )
+}
