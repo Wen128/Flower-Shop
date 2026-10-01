@@ -12,7 +12,9 @@ export default function RootLayout({
       lang="en"
     >
         <Navbar />
-      <body>{children}</body>
+      <body className="bg-[#F7F7F7]">
+        {children}
+      </body>
       <Footer />
     </html>
   );

@@ -1,3 +1,4 @@
+import Link from "next/link"
 
 export const Navbar = () => {
   return (
@@ -10,10 +11,10 @@ export const Navbar = () => {
 
             {/* Navigation Links */}
             <div className="flex space-x-16 font-el-messiri text-xl">
-                <a href="#" className="text-[#913838] hover:text-[#FF7979]">Home</a>
-                <a href="#" className="text-[#913838] hover:text-[#FF7979]">Shop</a>
-                <a href="#" className="text-[#913838] hover:text-[#FF7979]">About</a>
-                <a href="#" className="text-[#913838] hover:text-[#FF7979]">FAQs</a>
+                <Link href="/" className="text-[#913838] hover:text-[#FF7979]">Home</Link>
+                <Link href="/shop" className="text-[#913838] hover:text-[#FF7979]">Shop</Link>
+                <Link href="/about" className="text-[#913838] hover:text-[#FF7979]">About</Link>
+                <Link href="/faqs" className="text-[#913838] hover:text-[#FF7979]">FAQs</Link>
             </div>
 
             {/* Cart and Profile Icon */}
