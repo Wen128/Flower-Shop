@@ -40,51 +40,61 @@ export default function Shop() {
             <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 my-12'>
                     <ProductCard product={{
                             name: "Pink Flower",
+                            slug: "pink-flower",
                             price: 128,
                             image: "/images/best_seller1.png",
                         }}/>
                         <ProductCard product={{
                             name: "Yellow Flower",
+                            slug: "yellow-flower",
                             price: 158,
                             image: "/images/best_seller2.png",
                         }}/>
                         <ProductCard product={{
                             name: "Orange Flower",
+                            slug: "orange-flower",
                             price: 138,
                             image: "/images/best_seller3.png",
                         }}/>
                         <ProductCard product={{
                             name: "Purple Flower",
+                            slug: "purple-flower",
                             price: 188,
                             image: "/images/best_seller4.png",
                         }}/>
                         <ProductCard product={{
                             name: "Orange Flower",
+                            slug: "orange-flower",
                             price: 138,
                             image: "/images/best_seller3.png",
                         }}/>
                         <ProductCard product={{
                             name: "Purple Flower",
+                            slug: "purple-flower",
                             price: 188,
                             image: "/images/best_seller4.png",
                         }}/>
                         <ProductCard product={{
                             name: "Orange Flower",
+                            slug: "orange-flower",
                             price: 138,
                             image: "/images/best_seller3.png",
                         }}/>
                         <ProductCard product={{
                             name: "Purple Flower",
+                            slug: "purple-flower",
                             price: 188,
                             image: "/images/best_seller4.png",
                         }}/>
                         <ProductCard product={{
                             name: "Orange Flower",
+                            slug: "orange-flower",
                             price: 138,
                             image: "/images/best_seller3.png",
                         }}/>
                         <ProductCard product={{
                             name: "Purple Flower",
+                            slug: "purple-flower",
                             price: 188,
                             image: "/images/best_seller4.png",
                         }}/>

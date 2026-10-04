@@ -7,6 +7,7 @@ import {
 } from "next/font/google";
 
 import "./globals.css";
+import { CartProvider } from "@/src/context/CartContext";
 
 const dynaPuff = DynaPuff({
   subsets: ["latin"],
@@ -48,7 +49,9 @@ export default function RootLayout({
       lang="en"
       className={`${dynaPuff.variable} ${elMessiri.variable} ${inter.variable} ${inspiration.variable}`}
     >
-      <body>{children}</body>
+      <CartProvider>
+        <body>{children}</body>
+      </CartProvider>
     </html>
   );
 }
