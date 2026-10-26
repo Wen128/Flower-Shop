@@ -27,7 +27,7 @@ export default function ProductActions({ product }: ProductActionsProps) {
 
 
   return (
-    <div className="flex items-center gap-4 my-4">
+    <div className="flex flex-wrap items-center gap-3 sm:gap-4 my-4 w-full">
       {/* Choose Amount */}
       <div className="flex items-center space-x-4 rounded-full border border-gray-100 p-1 text-xl shadow-sm">
         <button
@@ -50,13 +50,13 @@ export default function ProductActions({ product }: ProductActionsProps) {
       {/* Add to Cart */}
       <button
         onClick={() => addToCart(product, amount)}
-        className="rounded-full  text-primary px-8 py-4 transition-colors duration-300 border border-primary hover:bg-primary hover:text-white cursor-pointer"
+        className="rounded-full text-primary px-5 sm:px-8 py-3 sm:py-4 transition-colors duration-300 border border-primary hover:bg-primary hover:text-white cursor-pointer"
       >
         Add to Cart
       </button>
 
       {/* Buy Now */}
-      <button className="rounded-full bg-primary px-8 py-4 text-white transition-colors duration-300 hover:bg-tertiary cursor-pointer">
+      <button className="rounded-full bg-primary px-5 sm:px-8 py-3 sm:py-4 text-white transition-colors duration-300 hover:bg-tertiary cursor-pointer">
         Buy Now
       </button>
     </div>

@@ -18,14 +18,15 @@ export default function Cart() {
     };
 
   return (
-    <div className="w-full flex flex-col  min-h-screen pt-40 items-center">
-        <div className="w-4/5 flex flex-col h-full">
-            <h1 className="text-4xl mb-4 text-primary font-dynapuff font-medium">My Cart</h1>
+    <div className="w-full flex flex-col min-h-screen pt-28 sm:pt-40 pb-10 items-center">
+        <div className="w-11/12 sm:w-4/5 flex flex-col h-full">
+            <h1 className="text-3xl sm:text-4xl mb-4 text-primary font-dynapuff font-medium">My Cart</h1>
             {cartItems.length === 0 ? (
                 <p>Your cart is empty.</p>
                 ) : (
                     <div>
-                        <table className="w-full border-collapse text-left">
+                        <div className="w-full overflow-x-auto">
+                        <table className="w-full min-w-[620px] border-collapse text-left">
                             <thead>
                                 <tr className="border-b border-gray-200 my-2 text-gray-500">
                                     <th className='py-4'></th>
@@ -40,7 +41,7 @@ export default function Cart() {
                             <tbody>
                                 {cartItems.map((item) => (
                                     <tr key={item.id} className="">
-                                        <td className='py-4'><img src={item.image} alt={item.name} className="h-28 w-28 rounded-lg object-cover" /></td>
+                                        <td className='py-4'><img src={item.image} alt={item.name} className="h-20 w-20 sm:h-28 sm:w-28 rounded-lg object-cover" /></td>
                                         <td className='py-4'>{item.name}</td>
                                         <td className='py-4'>RM{item.price.toFixed(2)}</td>
                                         <td className='py-4'>
@@ -73,8 +74,9 @@ export default function Cart() {
                             </tbody>
 
                         </table>
+                        </div>
 
-                        <div className="flex justify-between items-center my-16 bg-gray-100 p-8 rounded-lg">
+                        <div className="flex flex-col lg:flex-row justify-between items-stretch lg:items-center gap-8 my-10 sm:my-16 bg-gray-100 p-5 sm:p-8 rounded-lg">
                             <div className="flex flex-col gap-4">
                                 <h1 className="text-xl font-bold">Choose Shipping Method:</h1>
                                 <div>
@@ -87,7 +89,7 @@ export default function Cart() {
                                 </div>
                             </div>
 
-                            <div className="flex flex-col gap-6 w-1/3">
+                            <div className="flex flex-col gap-6 w-full lg:w-1/3">
                                 <div className="flex justify-between items-center">
                                     <div className="flex flex-col items-start gap-4 text-gray-500 font-light">
                                         <h1>Subtotal</h1>

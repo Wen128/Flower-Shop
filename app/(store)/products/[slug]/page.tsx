@@ -53,14 +53,14 @@ export default async function Products({
   return (
     <div className="flex flex-col min-h-screen w-full justify-center items-center">
         {/* Back Button */}
-        <div className="flex w-4/5 items-center justify-start my-4">
+        <div className="flex w-11/12 sm:w-4/5 items-center justify-start my-4 mt-24 sm:mt-32">
           <p><Link href="/shop" className="text-primary text-lg hover:text-tertiary font-el-messiri">
             &larr; Back to Shop
           </Link></p>
         </div>
-      <div className="flex w-4/5 items-center justify-between">
+      <div className="flex w-11/12 sm:w-4/5 flex-col md:flex-row items-center justify-between gap-8 md:gap-12 pb-12">
         {/* Product Image */}
-        <div className="flex w-[40%] items-center justify-center">
+        <div className="flex w-full md:w-[40%] items-center justify-center">
           <img
             src={product.image}
             alt={product.name}
@@ -69,16 +69,16 @@ export default async function Products({
         </div>
 
         {/* Product Information */}
-        <div className="flex w-[50%] flex-col items-start space-y-4 font-dynapuff text-primary">
-          <h1 className="text-4xl font-medium">
+        <div className="flex w-full md:w-[50%] flex-col items-start space-y-4 font-dynapuff text-primary">
+          <h1 className="text-3xl sm:text-4xl font-medium">
             {product.name}
           </h1>
 
-          <p className="text-2xl">
+          <p className="text-xl sm:text-2xl">
             RM{product.price.toFixed(2)}
           </p>
 
-          <p className="text-xl text-gray-500 font-el-messiri">
+          <p className="text-lg sm:text-xl text-gray-500 font-el-messiri">
             Lorem ipsum dolor sit amet, consectetur adipiscing
             elit. Sed euismod, nunc ut aliquam tincidunt, nunc
             nisl aliquam nisl, eget aliquam nunc nisl euismod

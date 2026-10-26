@@ -1,22 +1,22 @@
 
 export default function Footer() {
   return (
-    <div className="w-full h-[50vh] bg-[#F7DCDC] flex justify-center items-center">
-        <div className="flex w-4/5 justify-between font-dynapuff">
-            <div className="flex flex-col justify-between">
-                <h1 className="text-4xl text-[#FF7979] font-dynapuff">Flower<span className="text-[#913838]">Shop</span></h1>
-                <h1 className="text-xl">© 2026. All rights reserved</h1>
+    <div className="w-full bg-[#F7DCDC] flex justify-center py-10 sm:py-14">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 w-11/12 sm:w-4/5 font-dynapuff">
+            <div className="flex flex-col gap-4 sm:gap-8">
+                <h1 className="text-3xl sm:text-4xl text-[#FF7979] font-dynapuff">Flower<span className="text-[#913838]">Shop</span></h1>
+                <h1 className="text-base sm:text-xl">© 2026. All rights reserved</h1>
             </div>
 
                 {/* Navigation Links */}
-            <div className="flex space-x-16 text-2xl">
+            <div className="flex flex-wrap gap-x-6 gap-y-3 sm:gap-x-8 lg:gap-x-10 text-lg sm:text-xl lg:text-2xl">
                 <a href="#" className="text-[#913838] hover:text-[#FF7979]">Home</a>
                 <a href="#" className="text-[#913838] hover:text-[#FF7979]">Shop</a>
                 <a href="#" className="text-[#913838] hover:text-[#FF7979]">About</a>
                 <a href="#" className="text-[#913838] hover:text-[#FF7979]">FAQs</a>
             </div>
 
-            <div className="flex flex-col text-lg border-l-2 py-4 pl-12">
+            <div className="flex flex-col text-base sm:text-lg border-l-2 py-2 pl-5 sm:pl-8">
                 <p>Call:</p>
                 <p>+6012-345 6789</p>
                 <br/>
@@ -34,8 +34,8 @@ export default function Footer() {
                     >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        width="32"
-                        height="32"
+                    width="28"
+                    height="28"
                         viewBox="0 0 24 24"
                         fill="currentColor"
                     >
@@ -52,8 +52,8 @@ export default function Footer() {
                     >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        width="32"
-                        height="32"
+                    width="28"
+                    height="28"
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"

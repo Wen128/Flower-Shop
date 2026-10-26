@@ -66,9 +66,9 @@ export default function Login() {
 
 
   return (
-    <div className="relative w-full h-screen overflow-hidden flex justify-center items-center">
+    <div className="relative w-full min-h-screen overflow-hidden flex justify-center items-center p-4 sm:p-8">
     
-          <Image src="/images/flower_bg.png" alt="Flower Shop" width={800} height={600} className="w-full h-auto absolute -z-50" />
+          <Image src="/images/flower_bg.png" alt="Flower Shop" fill sizes="100vw" className="absolute -z-50 object-cover" />
           {/* popup success */}
           <div
             className={`fixed inset-0 z-50 flex items-center justify-center
@@ -91,24 +91,24 @@ export default function Login() {
             </div>
           </div>
 
-          <div className="w-1/2 h-3/4 flex justify-center items-center bg-white shadow-xl rounded-3xl p-12">
-              <form onSubmit={handleSubmit} className="w-full h-full flex flex-col justify-between items-center py-12">
+          <div className="w-full max-w-xl min-h-[28rem] sm:min-h-[34rem] flex justify-center items-center bg-white shadow-xl rounded-3xl p-6 sm:p-12">
+              <form onSubmit={handleSubmit} className="w-full min-h-[24rem] flex flex-col justify-between items-center py-6 sm:py-12">
                   <h1 className="text-3xl font-el-messiri font-bold text-primary">Login</h1>
                   <input
                     type="email"
                     placeholder="Email"
-                    className="w-3/4 p-4 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                    className="w-full sm:w-3/4 p-3 sm:p-4 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   />
                   <input
                     type="password"
                     placeholder="Password"
-                    className="w-3/4 p-4 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                    className="w-full sm:w-3/4 p-3 sm:p-4 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
                     value={formData.password}
                     onChange={(e) => setFormData({ ...formData, password: e.target.value })}
                   />
-                  <button type="submit" className="w-3/4 p-4 bg-primary text-white rounded-lg hover:bg-[#913838] transition duration-300">
+                  <button type="submit" className="w-full sm:w-3/4 p-4 bg-primary text-white rounded-lg hover:bg-[#913838] transition duration-300">
                     Login
                   </button>
                   <p>Don't have an account? <a href="/register" className="text-primary hover:underline">Register</a></p>

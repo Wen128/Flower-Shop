@@ -31,9 +31,9 @@ export default function Faqs() {
     ]
   return (
     <div>
-        <div>
-            <Image src="/images/about_bg.jpg" width={800} height={300} alt='About Flower Shop' className='w-full h-[50vh] object-cover object-[100%_75%] brightness-60'/>
-            <h1 className="text-5xl font-dynapuff text-white text-center absolute inset-0 flex top-[25vh] justify-center">Frequent Asked Questions</h1>
+        <div className="relative">
+            <Image src="/images/about_bg.jpg" width={800} height={300} alt='About Flower Shop' className='w-full h-[40vh] sm:h-[50vh] object-cover object-[100%_75%] brightness-60'/>
+            <h1 className="text-3xl sm:text-5xl px-4 font-dynapuff text-white text-center absolute inset-x-0 top-[18vh] sm:top-[25vh] flex justify-center">Frequently Asked Questions</h1>
         </div>
 
         <div className='min-h-screen flex justify-center py-16'>

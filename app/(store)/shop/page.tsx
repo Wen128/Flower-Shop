@@ -78,12 +78,12 @@ export default function Shop() {
     }
 
   return (
-    <div className='w-full min-h-screen pt-40 flex justify-center'>
-        <div className='w-4/5'>
-            <div className='w-full flex justify-between'>
-                <h1 className='text-5xl text-primary font-dynapuff font-medium'>Shop</h1>
+    <div className='w-full min-h-screen pt-28 sm:pt-36 flex justify-center'>
+        <div className='w-11/12 sm:w-4/5'>
+            <div className='w-full flex flex-col sm:flex-row sm:items-center justify-between gap-5'>
+                <h1 className='text-4xl sm:text-5xl text-primary font-dynapuff font-medium'>Shop</h1>
 
-                <div className='flex gap-2'>
+                <div className='flex gap-2 w-full sm:w-auto'>
                     <div className='relative'>
                         <button
                             className="text-black transition-colors duration-300 hover:text-secondary bg-[#E8E8E8] px-4 py-3 rounded-full"
@@ -121,7 +121,7 @@ export default function Shop() {
                                 </ul>
                             </div>
                     </div>
-                    <input value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} className='bg-[#E8E8E8] focus:outline-none rounded-full px-4 py-1' placeholder='Search...' />
+                    <input value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} className='min-w-0 flex-1 sm:flex-none sm:w-56 bg-[#E8E8E8] focus:outline-none rounded-full px-4 py-1' placeholder='Search...' />
 
 
                 </div>
