@@ -1,7 +1,7 @@
 "use client";
 import { useCart } from "@/src/context/CartContext";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 interface ProductActionsProps {
   product: {

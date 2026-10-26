@@ -49,9 +49,11 @@ export default function RootLayout({
       lang="en"
       className={`${dynaPuff.variable} ${elMessiri.variable} ${inter.variable} ${inspiration.variable}`}
     >
+      <body>
       <CartProvider>
-        <body>{children}</body>
+        {children}
       </CartProvider>
+      </body>
     </html>
   );
 }
